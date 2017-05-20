@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+a {
+	text-decoration: none;
+}
+.blue {
+	border-left: 7px solid #31BAF9;
+	margin-right: 70px;
+}
+.green{
+	border-left: 7px solid #86D73F;
+	margin-right: 70px;
+}
+.orange{
+	border-left: 7px solid #FF982D;
+	margin-right: 70px;	
+}
+.easyRed,.normalRed{
+	border-left: 7px solid #FF6C02;
+	margin-right: 30px;
+}
+.varyRed{
+	border-left: 7px solid #FF1200;
+	margin-right: 30px;	
+}
+.clear{
+	clear: both;
+}
+.header{
+	background: #424242;
+	max-width: 1024px;
+	padding: 81px 0;
+	margin: 0 auto;
+}
+.header h1{
+	margin-left: 173px;
+	width: 117px;
+	height: 117px;
+	background: url('../images/BMICLogo.png');
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align:top;
+	margin-top: 30px;
+}
+.data{
+	display: inline-block;
+	font-family: .AppleSystemUIFont;
+	font-size: 18px;
+	color: #FFD366;
+	margin-left: 50px;
+	height: auto;
+}
+.data input[type="text"]{
+	margin-top: 10px;
+    border-radius: 5px;
+    border: 3px solid #FFD366;
+    background: rgba(255,255,255,0.18);
+    padding: 5px 10px;
+    outline: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.data input[type="text"]:hover{
+	background: rgba(255,255,255,0.09);
+}
+.data input[type="text"]:focus{
+	border: 3px solid rgba(255, 211, 102, 0.6);
+}
+.result{
+	display: inline;
+	margin-left: 30px;
+	height: 200px;
+	padding-bottom: 50px;
+}
+.resultBtn{
+	border: 0px solid #FFD366;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 24px;
+	color: #424242;
+	background: #FFD366;
+	outline: none;
+	display: inline-block;
+	padding: 50px 30px;
+	vertical-align: top;
+	margin-top: 35px;
+}
+.resultBtn:hover{
+	background: rgba(255, 222, 102, 0.7);
+	border: 1px solid #FFD366;
+}
+.hText input[type="text"]{
+	margin-bottom: 50px;
+}
+.sizeBMI{
+	font-size: 14px;
+}
+.blueClass{
+	border: 7px solid #31BAF9;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #31BAF9;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.greenClass{
+	border: 7px solid #86D73E;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #86D73E;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.orangeClass{
+	border: 7px solid #FF982D;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #FF982D;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.easyRedClass{
+	border: 7px solid #FF6C02;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #FF6C02;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.normalRedClass{
+	border: 7px solid #FF6C02;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #FF6C02;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.varyRedClass{
+	border: 7px solid #FF1200;
+	border-radius: 50%;
+	font-family: PingFangTC-Regular;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	color: #FF1200;
+	background: #424242;
+	outline: none;
+	margin-top: 35px;
+	vertical-align:top;
+	display: inline-block;
+	padding: 30px;
+}
+.loopNone{
+	display: none;
+}
+.blueLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #31BAF9;
+    padding: 5px;
+}
+.greenLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #86D73F;
+    padding: 5px;
+}
+.orangeLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #FF982D;
+    padding: 5px;
+}
+.easyRedLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #FF6C02;
+    padding: 5px;
+}
+.normalRedLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #FF6C02;
+    padding: 5px;
+}
+.varyRedLoop{
+	height: 20px;
+    width: 20px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -20px;
+    background: #FF1200;
+    padding: 5px;
+}
+.fontStage{
+	display: inline-block;
+}
+.blueFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 28px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #31BAF9;
+}
+.greenFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 28px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #86D73E;
+}
+.orangeFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 28px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #FF982D;
+}
+.easyRedFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 26px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #FF6C02;
+}
+.normalRedFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 26px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #FF6C02;
+}
+.varyRedFont{
+    display: inline-block;
+    background: #424242;
+    font-size: 26px;
+    vertical-align: 70px;
+    font-weight: 700;
+    color: #FF1200;
+
+}
+.content{
+	margin: 0 auto;
+	height: auto;
+}
+.content h2{
+	text-align: center;
+	font-family: .SFNSDisplay;
+	font-size: 24px;
+	color: #424242;
+	margin: 50px 0;
+}
+.list{
+	max-width: 1024px;
+	margin: 0 200px;
+	font-size: 20px;
+	font-weight: 500;
+	height: 100%;
+}
+.list li{
+	margin-bottom: 16px;
+}
+.list em{
+	padding: 5px 0;
+	max-width: 130px;
+	max-width: auto;
+}
+.list span{
+	margin-right: 30px;
+}
+.footer {
+	background: #424242;
+	max-width: 1024px;
+	padding: 17px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer img{
+	width: 55px;
+	height: 55px;
+}
